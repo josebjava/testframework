@@ -1,0 +1,66 @@
+{
+  "id": "1f71ed1a-bd00-4521-96ef-075c73a489bc",
+  "version": "2.0",
+  "name": "GoogleTest",
+  "url": "https://www.google.com.ar",
+  "tests": [{
+    "id": "f314014b-6421-47f9-9fb4-aec04a991c28",
+    "name": "GoogleTest",
+    "commands": [{
+      "id": "049774ea-5076-4819-838b-57758831e72e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27650139-b68e-47cf-ba98-2d0b62acd939",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "946x1042",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8708c8e1-b1d3-415e-8c0e-ac18bb199ef1",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "This is a test"
+    }, {
+      "id": "12e9a265-7a87-497e-b85b-955cbaacd1ac",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "d79838ca-5dc7-45cc-9aac-00215b70abc8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0de66180-2d28-4817-9868-b0f7e8ceba0d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f314014b-6421-47f9-9fb4-aec04a991c28"]
+  }],
+  "urls": ["https://www.google.com.ar/"],
+  "plugins": []
+}
