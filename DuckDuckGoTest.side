@@ -65,10 +65,10 @@
     }, {
       "id": "061618e9-481a-4fd4-9187-8d45d6063cce",
       "comment": "",
-      "command": "assertElementPresent",
-      "target": "css=.BrPN5UiFwJN5HlfRhga9 .EKtkFWMYpwzMKOYr0GYm",
+      "command": "waitForElementPresent",
+      "target": "css=.B433VpEfaxl6n8VNRUDy .Wo6ZAEmESLNUuWBkbMxx",
       "targets": [],
-      "value": ""
+      "value": "30000"
     }, {
       "id": "44e9cbe3-fe39-45ab-9be6-51d5a90e7aa2",
       "comment": "",
