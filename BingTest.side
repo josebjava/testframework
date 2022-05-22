@@ -65,18 +65,10 @@
     }, {
       "id": "b9b3052a-caa9-44ff-aaba-a154ef3cdbe3",
       "comment": "",
-      "command": "assertElementPresent",
+      "command": "waitForElementVisible",
       "target": "linkText=This is a test - Wikipedia",
-      "targets": [
-        ["linkText=This is a test - Wikipedia", "linkText"],
-        ["css=.b_LinksColorMD", "css:finder"],
-        ["xpath=//a[contains(text(),'This is a test - Wikipedia')]", "xpath:link"],
-        ["xpath=//ol[@id='b_results']/li[5]/h2/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, 'https://en.wikipedia.org/wiki/This_is_a_test')]", "xpath:href"],
-        ["xpath=//li[5]/h2/a", "xpath:position"],
-        ["xpath=//a[contains(.,'This is a test - Wikipedia')]", "xpath:innerText"]
-      ],
-      "value": ""
+      "targets": [],
+      "value": "30000"
     }, {
       "id": "8126ed19-a711-4409-8f5d-7bf65a143b94",
       "comment": "",

@@ -47,15 +47,15 @@
     }, {
       "id": "01d6c10c-365f-4a6e-ae04-44dca1056b41",
       "comment": "",
-      "command": "assertElementPresent",
-      "target": "css=.g:nth-child(9) .LC20lb",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div/a/h3",
       "targets": [
-        ["css=.g:nth-child(9) .LC20lb", "css:finder"],
+        ["css=.g:nth-child(8) .LC20lb", "css:finder"],
         ["xpath=//div[@id='rso']/div[3]/div/div/div/a/h3", "xpath:idRelative"],
         ["xpath=//div/a/h3", "xpath:position"],
         ["xpath=//h3[contains(.,'This is a test - Wikipedia')]", "xpath:innerText"]
       ],
-      "value": ""
+      "value": "30000"
     }, {
       "id": "b85d50ca-9c5d-4297-a4ad-df7543a1dcb7",
       "comment": "",

@@ -65,15 +65,10 @@
     }, {
       "id": "849d7ded-c620-4918-94e5-39b7b9e11d2b",
       "comment": "",
-      "command": "assertElementPresent",
+      "command": "waitForElementPresent",
       "target": "css=.first .title > .d-ib",
-      "targets": [
-        ["css=.first .title > .d-ib", "css:finder"],
-        ["xpath=//div[@id='web']/ol/li/div/div/h3/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, 'https://www.youtube.com/watch?v=fIrrHUaXpAE')]", "xpath:href"],
-        ["xpath=//h3/a", "xpath:position"]
-      ],
-      "value": ""
+      "targets": [],
+      "value": "30000"
     }, {
       "id": "6110730a-f25a-4405-8d92-8ed74ab4162b",
       "comment": "",
