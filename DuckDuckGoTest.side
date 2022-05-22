@@ -66,8 +66,13 @@
       "id": "061618e9-481a-4fd4-9187-8d45d6063cce",
       "comment": "",
       "command": "waitForElementPresent",
-      "target": "css=.B433VpEfaxl6n8VNRUDy .Wo6ZAEmESLNUuWBkbMxx",
-      "targets": [],
+      "target": "xpath=//h2/a/span",
+      "targets": [
+        ["css=.BrPN5UiFwJN5HlfRhga9 .EKtkFWMYpwzMKOYr0GYm", "css:finder"],
+        ["xpath=//article[@id='r1-0']/div[2]/h2/a/span", "xpath:idRelative"],
+        ["xpath=//h2/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'This Is a Test (Short 2016) - IMDb')]", "xpath:innerText"]
+      ],
       "value": "30000"
     }, {
       "id": "44e9cbe3-fe39-45ab-9be6-51d5a90e7aa2",
