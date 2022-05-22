@@ -45,7 +45,19 @@
       ],
       "value": "${KEY_ENTER}"
     }, {
-      "id": "d79838ca-5dc7-45cc-9aac-00215b70abc8",
+      "id": "01d6c10c-365f-4a6e-ae04-44dca1056b41",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.g:nth-child(9) .LC20lb",
+      "targets": [
+        ["css=.g:nth-child(9) .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div[3]/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//div/a/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'This is a test - Wikipedia')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b85d50ca-9c5d-4297-a4ad-df7543a1dcb7",
       "comment": "",
       "command": "close",
       "target": "",
@@ -55,12 +67,12 @@
   }],
   "suites": [{
     "id": "0de66180-2d28-4817-9868-b0f7e8ceba0d",
-    "name": "Default Suite",
+    "name": "Google",
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
     "tests": ["f314014b-6421-47f9-9fb4-aec04a991c28"]
   }],
-  "urls": ["https://www.google.com.ar/"],
+  "urls": ["https://www.google.com.ar/", "https://espanol.yahoo.com/?p=us"],
   "plugins": []
 }

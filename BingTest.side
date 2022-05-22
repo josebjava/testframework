@@ -1,0 +1,99 @@
+{
+  "id": "a60770b0-e7e0-44c4-80b8-6907318efb96",
+  "version": "2.0",
+  "name": "BingTest",
+  "url": "https://www4.bing.com",
+  "tests": [{
+    "id": "df16b8bd-3a6e-42ea-ae6f-1390eb4301f6",
+    "name": "BingTest",
+    "commands": [{
+      "id": "cb7d6bb1-5d55-428c-bf9d-a96ec3f69a1a",
+      "comment": "",
+      "command": "open",
+      "target": "/?form=DCDN",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b906e269-2223-42e9-9a56-c83ee79b3cde",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "946x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1ed27bf-be57-4dab-b96f-4f38ba8cc682",
+      "comment": "",
+      "command": "click",
+      "target": "id=sb_form_q",
+      "targets": [
+        ["id=sb_form_q", "id"],
+        ["name=q", "name"],
+        ["css=#sb_form_q", "css:finder"],
+        ["xpath=//input[@id='sb_form_q']", "xpath:attributes"],
+        ["xpath=//form[@id='sb_form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "84cae5df-7b93-40fe-8d88-1bde25e43b3b",
+      "comment": "",
+      "command": "type",
+      "target": "id=sb_form_q",
+      "targets": [
+        ["id=sb_form_q", "id"],
+        ["name=q", "name"],
+        ["css=#sb_form_q", "css:finder"],
+        ["xpath=//input[@id='sb_form_q']", "xpath:attributes"],
+        ["xpath=//form[@id='sb_form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "This is a test"
+    }, {
+      "id": "aa49d1cc-bf61-47a8-80f9-dc907f4ddcc0",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=sb_form_q",
+      "targets": [
+        ["id=sb_form_q", "id"],
+        ["name=q", "name"],
+        ["css=#sb_form_q", "css:finder"],
+        ["xpath=//input[@id='sb_form_q']", "xpath:attributes"],
+        ["xpath=//form[@id='sb_form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "b9b3052a-caa9-44ff-aaba-a154ef3cdbe3",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=This is a test - Wikipedia",
+      "targets": [
+        ["linkText=This is a test - Wikipedia", "linkText"],
+        ["css=.b_LinksColorMD", "css:finder"],
+        ["xpath=//a[contains(text(),'This is a test - Wikipedia')]", "xpath:link"],
+        ["xpath=//ol[@id='b_results']/li[5]/h2/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://en.wikipedia.org/wiki/This_is_a_test')]", "xpath:href"],
+        ["xpath=//li[5]/h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'This is a test - Wikipedia')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8126ed19-a711-4409-8f5d-7bf65a143b94",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "021f00d8-b3ee-4be1-a0d5-d55035ca1197",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["df16b8bd-3a6e-42ea-ae6f-1390eb4301f6"]
+  }],
+  "urls": ["https://www4.bing.com/"],
+  "plugins": []
+}

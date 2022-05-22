@@ -1,0 +1,96 @@
+{
+  "id": "1a62c856-f6dd-4795-87f3-f2ffe65bf9b3",
+  "version": "2.0",
+  "name": "YahooTest",
+  "url": "https://espanol.yahoo.com",
+  "tests": [{
+    "id": "9b9b1103-f357-437b-97be-782ec10169c0",
+    "name": "YahooTest",
+    "commands": [{
+      "id": "d7ac9bf2-ac90-478c-b9d4-3717ab74e9e3",
+      "comment": "",
+      "command": "open",
+      "target": "/?p=us",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fbf6a671-c460-4924-bb34-1c920c0334f8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "946x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f84e1c06-ed36-4bcd-84d1-53f49573e4d3",
+      "comment": "",
+      "command": "click",
+      "target": "id=ybar-sbq",
+      "targets": [
+        ["id=ybar-sbq", "id"],
+        ["name=p", "name"],
+        ["css=#ybar-sbq", "css:finder"],
+        ["xpath=//input[@id='ybar-sbq']", "xpath:attributes"],
+        ["xpath=//form[@id='ybar-sf']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f773ef85-3a85-4cad-9496-877d501c922c",
+      "comment": "",
+      "command": "type",
+      "target": "id=ybar-sbq",
+      "targets": [
+        ["id=ybar-sbq", "id"],
+        ["name=p", "name"],
+        ["css=#ybar-sbq", "css:finder"],
+        ["xpath=//input[@id='ybar-sbq']", "xpath:attributes"],
+        ["xpath=//form[@id='ybar-sf']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "This is a test"
+    }, {
+      "id": "61a1fcd7-5f7e-4d67-8b62-f1f7ccf35782",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=ybar-sbq",
+      "targets": [
+        ["id=ybar-sbq", "id"],
+        ["name=p", "name"],
+        ["css=#ybar-sbq", "css:finder"],
+        ["xpath=//input[@id='ybar-sbq']", "xpath:attributes"],
+        ["xpath=//form[@id='ybar-sf']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "849d7ded-c620-4918-94e5-39b7b9e11d2b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.first .title > .d-ib",
+      "targets": [
+        ["css=.first .title > .d-ib", "css:finder"],
+        ["xpath=//div[@id='web']/ol/li/div/div/h3/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.youtube.com/watch?v=fIrrHUaXpAE')]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6110730a-f25a-4405-8d92-8ed74ab4162b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "957bbee2-eba5-446d-8a5d-6d45a6de1151",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9b9b1103-f357-437b-97be-782ec10169c0"]
+  }],
+  "urls": ["https://espanol.yahoo.com/"],
+  "plugins": []
+}

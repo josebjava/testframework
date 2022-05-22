@@ -1,0 +1,91 @@
+{
+  "id": "d737b8f6-46c9-4e83-8a95-ef744916f6ef",
+  "version": "2.0",
+  "name": "DuckDuckGoTest",
+  "url": "https://duckduckgo.com",
+  "tests": [{
+    "id": "9e87ec74-8416-42aa-a06a-b5e77fb7c877",
+    "name": "DuckDuckGoTest",
+    "commands": [{
+      "id": "44b832db-ef59-4bbf-af66-c45f934d2456",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a13174b4-5160-419d-96e2-29f9500a176f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "946x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "782af4d2-005b-407d-8ffb-27f07e2b7424",
+      "comment": "",
+      "command": "click",
+      "target": "id=search_form_input_homepage",
+      "targets": [
+        ["id=search_form_input_homepage", "id"],
+        ["name=q", "name"],
+        ["css=#search_form_input_homepage", "css:finder"],
+        ["xpath=//input[@id='search_form_input_homepage']", "xpath:attributes"],
+        ["xpath=//form[@id='search_form_homepage']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "168b9229-f7a3-4eb1-b0aa-07db6b6313be",
+      "comment": "",
+      "command": "type",
+      "target": "id=search_form_input_homepage",
+      "targets": [
+        ["id=search_form_input_homepage", "id"],
+        ["name=q", "name"],
+        ["css=#search_form_input_homepage", "css:finder"],
+        ["xpath=//input[@id='search_form_input_homepage']", "xpath:attributes"],
+        ["xpath=//form[@id='search_form_homepage']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "This is a test"
+    }, {
+      "id": "87e4ffd4-d999-4651-a45b-c5cc8f393a21",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=search_form_input_homepage",
+      "targets": [
+        ["id=search_form_input_homepage", "id"],
+        ["name=q", "name"],
+        ["css=#search_form_input_homepage", "css:finder"],
+        ["xpath=//input[@id='search_form_input_homepage']", "xpath:attributes"],
+        ["xpath=//form[@id='search_form_homepage']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "061618e9-481a-4fd4-9187-8d45d6063cce",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.BrPN5UiFwJN5HlfRhga9 .EKtkFWMYpwzMKOYr0GYm",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "44e9cbe3-fe39-45ab-9be6-51d5a90e7aa2",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "75a363c5-0297-4fdb-b007-a347d90611c7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9e87ec74-8416-42aa-a06a-b5e77fb7c877"]
+  }],
+  "urls": ["https://duckduckgo.com/"],
+  "plugins": []
+}
