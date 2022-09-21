@@ -17,7 +17,7 @@
       "id": "8b7fa954-5911-4485-b24b-275188673290",
       "comment": "",
       "command": "setWindowSize",
-      "target": "1054x800",
+      "target": "1920x1080",
       "targets": [],
       "value": ""
     }, {
@@ -106,15 +106,10 @@
     }, {
       "id": "76cbdf87-f6f8-415b-a197-56b95521be2f",
       "comment": "",
-      "command": "assertText",
+      "command": "assertElementPresent",
       "target": "css=.a0dff0b1:nth-child(1)",
-      "targets": [
-        ["css=.a0dff0b1:nth-child(1)", "css:finder"],
-        ["xpath=//section[@id='tabpanel-dependencies']/h2", "xpath:idRelative"],
-        ["xpath=//section[4]/h2", "xpath:position"],
-        ["xpath=//h2[contains(.,'Dependencies (2)')]", "xpath:innerText"]
-      ],
-      "value": "Dependencies (2)"
+      "targets": [],
+      "value": ""
     }, {
       "id": "3b388070-fbdc-4bec-9fe5-2ab9d4a983c2",
       "comment": "",
@@ -130,15 +125,10 @@
     }, {
       "id": "4570ba34-a0a9-4c89-9f90-f37ad4a5d387",
       "comment": "",
-      "command": "assertText",
+      "command": "assertElementPresent",
       "target": "css=.a0dff0b1",
-      "targets": [
-        ["css=.a0dff0b1", "css:finder"],
-        ["xpath=//section[@id='tabpanel-dependents']/h2", "xpath:idRelative"],
-        ["xpath=//section[5]/h2", "xpath:position"],
-        ["xpath=//h2[contains(.,'Dependents (1059)')]", "xpath:innerText"]
-      ],
-      "value": "Dependents (1059)"
+      "targets": [],
+      "value": ""
     }, {
       "id": "dcaab8f4-c64a-4152-937a-e0e08183f399",
       "comment": "",
@@ -196,7 +186,7 @@
       "id": "e6ccaa74-bf51-4d64-906a-507e96f0e260",
       "comment": "",
       "command": "pause",
-      "target": "5000",
+      "target": "2000",
       "targets": [],
       "value": ""
     }, {
@@ -214,15 +204,10 @@
     }, {
       "id": "3a18011e-8318-47b2-a3f8-4fbdc4e95758",
       "comment": "",
-      "command": "assertText",
+      "command": "assertElementPresent",
       "target": "css=#readme > h1",
-      "targets": [
-        ["css=#readme > h1", "css:finder"],
-        ["xpath=//div[@id='readme']/h1", "xpath:idRelative"],
-        ["xpath=//article/div/h1", "xpath:position"],
-        ["xpath=//h1[contains(.,'selenium-webdriver')]", "xpath:innerText"]
-      ],
-      "value": "selenium-webdriver"
+      "targets": [],
+      "value": ""
     }, {
       "id": "b7402989-c539-46b2-9655-e00a4b93898c",
       "comment": "",
