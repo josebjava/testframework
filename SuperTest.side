@@ -48,10 +48,10 @@
       "id": "c397f6d5-5528-4902-8365-b6b975f89b1b",
       "comment": "",
       "command": "click",
-      "target": "css=#rso > .MjjYud:nth-child(1) .LC20lb",
+      "target": "xpath=//h3[contains(.,'Supertest - npm')]",
       "targets": [
-        ["css=#rso > .MjjYud:nth-child(1) .LC20lb", "css:finder"],
-        ["xpath=//div[@id='rso']/div/div/div/div/div/a/h3", "xpath:idRelative"],
+        ["css=.hlcw0c:nth-child(1) .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/div/div/div/a/h3", "xpath:idRelative"],
         ["xpath=//h3", "xpath:position"],
         ["xpath=//h3[contains(.,'Supertest - npm')]", "xpath:innerText"]
       ],
