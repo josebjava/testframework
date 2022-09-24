@@ -73,7 +73,7 @@
         ["xpath=//h2/span", "xpath:position"],
         ["xpath=//span[contains(.,'Cerca de 3.920.130.816 resultados de búsqueda')]", "xpath:innerText"]
       ],
-      "value": "30000"
+      "value": "20000"
     }]
   }],
   "suites": [{
