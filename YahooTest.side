@@ -66,16 +66,14 @@
       "id": "849d7ded-c620-4918-94e5-39b7b9e11d2b",
       "comment": "",
       "command": "waitForElementPresent",
-      "target": "css=.first .title > .d-ib",
-      "targets": [],
+      "target": "xpath=//div[@id='cols']/ol/li/div/div/h2/span",
+      "targets": [
+        ["css=.title > .fz-14", "css:finder"],
+        ["xpath=//div[@id='cols']/ol/li/div/div/h2/span", "xpath:idRelative"],
+        ["xpath=//h2/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Cerca de 3.920.130.816 resultados de búsqueda')]", "xpath:innerText"]
+      ],
       "value": "30000"
-    }, {
-      "id": "6110730a-f25a-4405-8d92-8ed74ab4162b",
-      "comment": "",
-      "command": "close",
-      "target": "",
-      "targets": [],
-      "value": ""
     }]
   }],
   "suites": [{
